@@ -18,25 +18,25 @@ de `hoisting`.
 `temporal dead zone` y la ejecución es interrupmida lanzando un error.
         
         
-```javascript
-{
-    console.log(foo);
-    let foo=2
-}```
+    javascript
+    {
+       console.log(foo);
+       let foo=2
+    }
 
 
 
 Ejemplo del scope let
     
-```javascript
+    javascript
     let num=0;
-function testNum()
- {
-  if (!num) {
+    function testNum()
+    {
+      if (!num) {
        let num=1;
       }
       return num;
-}```
+    }
 
 
 
