@@ -18,7 +18,7 @@ de `hoisting`.
 `temporal dead zone` y la ejecución es interrupmida lanzando un error.
         
         
-    ```javascript
+```javascript
 {
     console.log(foo);
     let foo=2
@@ -28,7 +28,7 @@ de `hoisting`.
 
 Ejemplo del scope let
     
-    ```javascript
+```javascript
     let num=0;
 function testNum()
  {
@@ -36,7 +36,7 @@ function testNum()
        let num=1;
       }
       return num;
-  }```
+}```
 
 
 #### Part II
