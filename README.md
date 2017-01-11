@@ -1,8 +1,8 @@
 ### Javascript Next (ECS7)
 
    Descripción de las nuevas característica del lenguaje, con sus nuevos `features`.
-   Entendimiento de las nuevas funciones para consultas sobre http.
-   Reconocimiento de nuevos patrones, con la idea de mejorar las actuales funciones utilizadas en los distintos programas.
+   
+   Reconocimiento de nuevos patrones de diseño del lenguaje, tratando de mejorar las actuales funciones utilizadas en los distintos programas.
 
 
 #### Part I
