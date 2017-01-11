@@ -16,7 +16,7 @@
     de `hoisting`.
     
     Cuando se quiere utilizar la variable antes de ser declarada, esto se sitúa en lugar llamado
-    `temporal dead zone` y la ejecución es interrupmida lanzando un error.
+    `temporal dead zone` y la ejecución es interrumpida lanzando un error.
         
         
 ```javascript
@@ -41,7 +41,106 @@ Ejemplo del scope let
     }
 ```
 
+Reemplazando las IIFE's, utilizando let, para evitar crear funciones cuyo único objectivo es
+`proteger` las variables.
 
+
+```javascript
+(function (namespace)
+{
+   var START_COUNT=0;
+   var DEFAULT_STEP=1;
+   
+   
+   var range=function(start,stop,step)
+   {
+   
+   var arr=[];
+   
+   if (!step)
+   {
+   step=DEFAULT_STEP;
+   }
+   if (!stop)
+   {
+   stop=start;
+   start=DEFAULT_STEP;
+   }
+   if (stop<start)
+   {
+    (function ()
+    {
+     var tmp=start;
+     start=stop;
+     stop=temp;
+    })();
+   }
+   
+   (function ()
+   {
+     var i;
+     for (i=start;i<stop;i+=step)
+     {
+      arr.push(i);
+     }
+})()
+   
+   
+    return arr;
+   
+   }
+   return range(START_COUNT,20,1);
+
+})("myLib");
+```
+Utilizando let
+
+```javascript
+
+(function (namespace)
+{
+   var START_COUNT=0;
+   var DEFAULT_STEP=1;
+   
+   
+   var range=function(start,stop,step)
+   {
+   
+   var arr=[];
+   
+   if (!step)
+   {
+   step=DEFAULT_STEP;
+   }
+   if (!stop)
+   {
+   stop=start;
+   start=DEFAULT_STEP;
+   }
+   if (stop<start)
+   {
+    let tmp=start;
+     start=stop;
+     stop=temp;
+ 
+   }
+   
+   {
+     let i;
+     for (i=start;i<stop;i+=step)
+     {
+      arr.push(i);
+     }
+   }
+   
+   
+    return arr;
+   
+   }
+   return range(START_COUNT,20,1);
+
+})("libLet");
+```
 #### Part II
 
 
