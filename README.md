@@ -170,10 +170,45 @@ noInm["valor"]="value2";
 
 #### Part III
 
+##### Utilizando nuevos método para los Strings.
 
+    .* String.prototype.startsWith
+    .* String.prototype.endsWith
+    .* String.prototype.includes
+    .* String.prototype.repeat
+    .* String.prototype.padStart
+    .* String.prototype.padEnd
+    
+```javascript
+'abc'.padStart(6);
+//"abc"
+
+'abc'.padEnd(6);
+//"abc   
+
+'abc'.padStart(6,'x')
+
+//xxxabc
+
+'abc'.padEnd(6,'x')
+
+//abcxxx
+
+```
+         
+     La propiedad de máxima longitud, determina la longitud del string luego de haber 
+     completado con la repetición indicada.Si los carácteres a ser reemplazados, son mayores que
+     el espacio para el reemplazo,el valor será truncado.
+     
+ ```javascript
+ 
+ "abc".padStart(8,'123');
+ "abc".padEnd(5,'123');
+ ```
 
 #### PART IV
 
+##### Utilizando template liters
 
 #### PART V
  
