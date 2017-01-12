@@ -147,7 +147,7 @@ Utilizando let
 
     Comparte las mismas caracteristicas que `let`, con la diferencia que también que la re-assignación esta prohibida.
 
-    Surge debido a la inhabilidad de reassignar de confundirlo con `inmutable`
+    Surge debido a la inhabilidad de reassignar valor la confusión con llamarlo `inmutable`.
     
     Los `const` NO son inmutables.
     
