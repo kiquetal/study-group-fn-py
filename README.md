@@ -181,10 +181,10 @@ noInm["valor"]="value2";
     
 ```javascript
 'abc'.padStart(6);
-//"abc"
+//"   abc"
 
 'abc'.padEnd(6);
-//"abc   
+//"abc   "
 
 'abc'.padStart(6,'x')
 
@@ -208,7 +208,10 @@ noInm["valor"]="value2";
 
 #### PART IV
 
-##### Utilizando template liters
+##### Utilizando template literals
+
+
+
 
 #### PART V
  
