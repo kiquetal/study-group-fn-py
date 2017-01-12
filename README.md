@@ -143,7 +143,30 @@ Utilizando let
 ```
 #### Part II
 
+##### Utilización de `const`
 
+    Comparte las mismas caracteristicas que `let`, con la diferencia que también que la re-assignación esta prohibida.
+
+    Surge debido a la inhabilidad de reassignar de confundirlo con `inmutable`
+    
+    Los `const` NO son inmutables.
+    
+    La assignación sólo significa la asociación de un nombre con respecto a la variable.
+    La inmutabilidad es la propiedad que el valor alojado en la variable nunca cambia.
+    
+    
+```javascript
+
+const noInm={};
+
+noInm["valor"]="value 1";
+noInm["valor"]="value2";
+
+
+```
+     
+      
+     
 
 #### Part III
 
