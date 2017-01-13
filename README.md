@@ -9,7 +9,7 @@
 
 ##### Utilización de `let`
 
-    El `scope` pertenece al bloque máx próximo donde fue definido, esto es diferente cuando
+    El `scope` pertenece al bloque más próximo donde fue definido, esto es diferente cuando
     se declara `var`, cuyo scope siempre es la función donde fue declarada.
     
     El concepto de una variable cuando es accedida, antes de ser declarada, recibe el nombre
@@ -145,9 +145,9 @@ Utilizando let
 
 ##### Utilización de `const`
 
-    Comparte las mismas caracteristicas que `let`, con la diferencia que también que la re-assignación esta prohibida.
+    Comparte las mismas características que `let`, con la diferencia que también que la re-asignación esta prohibida.
 
-    Surge debido a la inhabilidad de reassignar valor la confusión con llamarlo `inmutable`.
+    Surge debido a la inhabilidad de reasignar valor la confusión con llamarlo `inmutable`.
     
     Los `const` NO son inmutables.
     
@@ -195,9 +195,9 @@ noInm["valor"]="value2";
 //abcxxx
 
 ```
-         
+     
      La propiedad de máxima longitud, determina la longitud del string luego de haber 
-     completado con la repetición indicada.Si los carácteres a ser reemplazados, son mayores que
+     completado con la repetición indicada.Si los caracteres a ser reemplazados, son mayores que
      el espacio para el reemplazo,el valor será truncado.
      
  ```javascript
@@ -210,8 +210,8 @@ noInm["valor"]="value2";
 
 ##### Utilizando template literals
 
-      Es una nueva forma que sirve para la cración de String, utilia el ```, para la demarcanción
-      en lugar de las comillas o comillas dobles.
+      Es una nueva forma que sirve para la creación de String, utiliza el `, para la
+      demarcación en lugar de las comillas o comillas dobles.
       
       let str=`Hello World`
       
@@ -232,7 +232,6 @@ let multiline=`Nuevas cosas
     porciones de html, para formatear y/o realizar modificaciones en la presentación
     como eliminado de espacios, formato de moneda,etc.
     
-
 
 ```javascript
 function logParts()
