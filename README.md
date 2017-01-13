@@ -247,6 +247,8 @@ function logParts()
 
 logParts`1${2}2${3}${4}`
 
+//String:["1","3","",""]
+//Values: [2,4,5]
 ```
 
 ```javascript
