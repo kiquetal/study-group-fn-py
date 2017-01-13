@@ -226,8 +226,12 @@ let multiline=`Nuevas cosas
               segundas cosas`
 ```
 
-     Tagging functions
-  
+#####  Tagging functions
+      
+    Es una propiedad algo parecida a los macros,donde podremos enviar por ejemplo
+    porciones de html, para formatear y/o realizar modificaciones en la presentación
+    como eliminado de espacios, formato de moneda,etc.
+    
 
 
 ```javascript
@@ -239,7 +243,40 @@ function logParts()
   console.log(`Values`,values)
 
 }
+
+
+logParts`1${2}2${3}${4}`
+
 ```
+
+```javascript
+function stripWS()
+{
+  let stringParts=arguments[0];
+  let values=[].slice.call(arguments,1);
+  let str=stringParts.reduce(function (memo,nextPart){
+   return memo + String(values.shift()) + nextPart;
+  
+  });
+ return str.replace(/\n\s*/g,'');
+
+function getProductsHtml(product)
+{
+
+ return stripWS` <div class="products">
+           <div class="product-image">
+           <div class="product-desc">${product.desc}</div>
+           </div>
+                 `
+
+}
+
+
+}
+
+
+```
+
 
 
 #### PART V
