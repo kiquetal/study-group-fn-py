@@ -210,7 +210,36 @@ noInm["valor"]="value2";
 
 ##### Utilizando template literals
 
+      Es una nueva forma que sirve para la cración de String, utilia el ```, para la demarcanción
+      en lugar de las comillas o comillas dobles.
+      
+      let str=`Hello World`
+      
+      También se puede utilizar para las caracteristicas siguientes, 
+      Interpolación de String, Multilinea and Tagging
+      
+      Interpolación de String:
+      
+```javascript
+let interpolado= `You've ${cart.length} items in your cart`
+let multiline=`Nuevas cosas
+              segundas cosas`
+```
 
+     Tagging functions
+  
+
+
+```javascript
+function logParts()
+{
+  let stringParts=arguments[0];
+  let values=[].slice.call(arguments,1);
+  console.log('Strings:',stringParts);
+  console.log(`Values`,values)
+
+}
+```
 
 
 #### PART V
