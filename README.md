@@ -41,7 +41,7 @@ Ejemplo del scope let
     }
 ```
 
-Reemplazando las IIFE's, utilizando let, para evitar crear funciones cuyo único objectivo es
+Reemplazando las IIFE's, utilizando let, para evitar crear funciones cuyo único objetivo es
 `proteger` las variables.
 
 
@@ -151,7 +151,7 @@ Utilizando let
     
     Los `const` NO son inmutables.
     
-    La assignación sólo significa la asociación de un nombre con respecto a la variable.
+    La asignación sólo significa la asociación de un nombre con respecto a la variable.
     La inmutabilidad es la propiedad que el valor alojado en la variable nunca cambia.
     
     
@@ -215,7 +215,7 @@ noInm["valor"]="value2";
       
       let str=`Hello World`
       
-      También se puede utilizar para las caracteristicas siguientes, 
+      También se puede utilizar para las características siguientes, 
       Interpolación de String, Multilinea and Tagging
       
       Interpolación de String:
@@ -243,11 +243,10 @@ function logParts()
 
 }
 
-
 logParts`1${2}2${3}${4}`
 
-//String:["1","3","",""]
-//Values: [2,4,5]
+//String:["1","2","",""]
+//Values: [2,3,4]
 ```
 
 ```javascript
@@ -277,8 +276,6 @@ function getProductsHtml(product)
 
 
 ```
-
-
 
 #### PART V
  
